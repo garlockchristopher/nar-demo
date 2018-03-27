@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>com.cerner.build</groupId>
+    <artifactId>nar-parent</artifactId>
+    <version>0.13</version>
+  </parent>
+
+  <groupId>demo.group</groupId>
+  <artifactId>nar-is-awesome-lib</artifactId>
+  <packaging>nar</packaging>
+  <version>0.1</version>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.google</groupId>
+      <artifactId>gtest-main</artifactId>
+      <version>1.8.0</version>
+      <type>nar</type>
+    </dependency>
+    <dependency>
+      <groupId>com.google</groupId>
+      <artifactId>gtest-all</artifactId>
+      <version>1.8.0</version>
+      <type>nar</type>
+    </dependency>
+  </dependencies>
+  
+  <repositories>
+    <repository>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>apparch-release</id>
+      <name>Cerner Main Release Repository</name>
+      <url>http://repo.apparch.cerner.corp/main/temp-repo/</url>
+    </repository>
+  </repositories>
+
+</project>
